@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>CALC</title>
+</head>
+<body>
+    <a href="teste blau.html"><button>página blau</button></a>
+    <a href="index.html"><button>página guia</button></a>
+    <br>
+    <p id="resultadoadd"></p>
+    <p id="resultadosub"></p>
+    <p id="resultadomulti"></p>
+    <p id="resultadodiv"></p>
+    <input id="x" type="text"  />insira valor 1<br>
+    <input id="y" type="text"  />insira valor 2<br>
+<button onclick="calcula();">Calcular</button>
+    <script>
+     function calcula(){
+        let x = parseInt(document.getElementById("x").value);
+        let y = parseInt(document.getElementById("y").value);
+        let z = x + y;
+        document.getElementById("resultadoadd").innerHTML =
+    "Resultado da soma: " + z;
+    let w = x - y;
+    document.getElementById("resultadosub").innerHTML =
+    "Resultado da subtração: " + w;
+    let g = x * y;
+    document.getElementById("resultadomulti").innerHTML =
+    "Resultado da multiplicação: " + g;
+    let h = x / y;
+    document.getElementById("resultadodiv").innerHTML =
+    "Resultado da divisão: " + h;
+     }
+    </script>
+</body>
+</html>

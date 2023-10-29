@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+background-color: none;
+}
+
+li, a{
+    vertical-align: middle;
+    font-family: "Tauri";
+    font-weight: 400;
+    font-size: 15px;
+    color:white;
+    text-decoration: none;
+}
+button{
+    font-family: "Tauri";
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+header{
+    height: auto;
+    background-color: #0476D9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5% ;
+}
+.logo{
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    flex-grow: 1;
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.5s ease 0s ;
+}
+.nav_links li a:hover{
+    transition: all 0.5s ease 0s ;
+    filter: brightness(80%);
+}
+.buttons{
+    list-style: none;
+    
+}
+.buttons li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+a.cta button{
+    height: 45px;
+    padding: 0px 25px;
+    background-color: #FFD056;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s ;
+}
+a.cart button{
+    
+    width: 90px;
+    padding: 0px 0px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s ;
+}
+img.imgcart{
+    height: 85px;
+    width: 85px;
+}
+button:hover{
+    filter: brightness(80%);
+    transition: all 0.5s ease 0s ;
+}
+input{
+    height: 45px;
+    width: 270px;
+    align-self: center;
+    border-radius: 15px;
+    border: none;
+    margin-left: 2rem;
+}
+input[type="text"]
+{
+    font-size:20px;
+}
+::placeholder {
+    color: black;
+    font-size: 20px;
+    opacity: 1;
+    padding: 10px;
+  }

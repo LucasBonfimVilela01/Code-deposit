@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+
+* {
+    /*Zerar valores e aplicar fonte padrão (Tauri)*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    font-family: "Tauri";
+}
+
+/*Inicio header*/
+header {
+    background-color: #0476D9;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+img.Logo {
+    width: 10rem;
+
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+header input {
+    height: 2.5rem;
+    width: 28rem;
+    align-self: center;
+    border-radius: 50px;
+    border: none;
+    margin-left: 2rem;
+}
+
+header input::placeholder {
+    /*Customizar place holder do input*/
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0.5;
+    color: black;
+    padding-left: 1rem;
+}
+
+img.button {
+    /* Imagem Botão Cadastro e Login*/
+    height: 40px;
+    align-self: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+button.in_out {
+    /*Botão Login*/
+    height: 3rem;
+    width: fit-content;
+    align-self: center;
+    border-radius: 15px;
+    background-color: #FFD056;
+    border: none;
+    display: flex;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+button.in_out_dois {
+    /*Botão Cadastro*/
+    height: 3rem;
+    width: fit-content;
+    align-self: center;
+    border-radius: 15px;
+    background-color: #FFD056;
+    border: none;
+    display: flex;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+h4.button {
+    /*Texto Botão Cadastro e Login*/
+    font-size: 1rem;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+button.carrinho {
+    /*Botão carrinho*/
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: flex-end;
+    margin-left: 2rem;
+}
+
+img.carrinho {
+    /*Imagem Botão carrinho*/
+    width: 3rem;
+    height: 3rem;
+}
+
+div.button {
+    /*Botoões de Login, Cadastro e Carrinho*/
+    display: flex;
+    white-space: nowrap;
+}
+
+/*Vambora pra responsividade XD*/
+@media (max-width: 373px) {
+    header {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    header a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+    header input {
+        height: 2.5rem;
+        width: 28rem;
+        align-self: center;
+        border-radius: 50px;
+        border: none;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    button.carrinho {
+        width: 2.7rem;
+        height: 2.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: white;
+        border-radius: 15px;
+        align-self: center;
+        justify-self: flex-end;
+        margin-left: 1rem;
+    }
+
+    img.button {
+        height: 25px;
+        align-self: center;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    h4.button {
+        /*Texto Botão Cadastro e Login*/
+        font-size: 1rem;
+        align-self: center;
+        margin-right: 1rem;
+    }
+
+    img.carrinho {
+        /*Imagem Botão carrinho*/
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 929px) {
+    button.carrinho {
+        /*Botão carrinho*/
+        margin-left: 1rem;
+    }
+
+    button.in_out {
+        /*Botão Login*/
+        margin-left: 1rem;
+    }
+
+    header input {
+        margin-top: 1rem;
+    }
+
+    div.button {
+        margin-top: 1rem;
+    }
+}
+
+/*Fim header*/
+/*Inicio footer*/
+footer {
+    background-color: #0476D9;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img.Rede_Social {
+    width: 4rem;
+    margin-left: 4rem;
+}
+
+div.Logos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img.Rede_Social {
+    width: 5rem;
+}
+
+footer h3,
+footer h2 {
+    text-align: center;
+    color: #FFFFFF;
+    transition: all 0.5s ease 0s;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    transition: all 0.5s ease 0s;
+    filter: brightness(80%);
+
+}
+
+footer ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer li {
+    margin-right: 5rem;
+}
+
+/*Fim Fotter*/
+.container{
+    background-color: lightgray;
+    width: 100%;
+    min-height: 500px;
+    padding: 35px 50px;
+    border-radius: 10px;
+
+}
+.container h1{
+    font-size: 30px;
+    text-align: center;
+}
+.container p{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    color: gray;
+    width: 100%;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.container form{
+    width: 100%;
+    position: relative;
+}
+
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+    .row{
+        grid-template-columns:repeat(auto-fit, minmax(1000px,2fr));
+    }
+    .container input{
+        width: 100%;
+        font-weight: lighter;
+        padding: 8px 10px;
+        border-radius: 10px;
+        border: 2px solid gray;
+        margin-top: 5px;
+    }
+}
+
+.container input{
+    width: 100%;
+    font-weight: lighter;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    margin-top: 5px;
+}
+.container textarea{
+    resize: none;
+    width: 100%;
+    font-weight: lighter;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    margin-top: 5px;
+}
+.container textarea:focus, .container input:focus{
+    outline: none;
+    border-color:#0476D9;
+}
+.container button{
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:#FFD056;
+    border-radius: 15px;
+}
+.container button:hover{
+    transition: all 0.5s ease 0s;
+    filter: brightness(80%);
+}
+/*DISPLAY DA IMAGEM DO LADO*/
+.imglad{
+    height: fit-content;
+}
+.caixa1{
+    width: auto;
+    height: auto;
+    flex-grow: 0.5;
+}
+.caixa2{
+    align-items: center;
+    width: auto;
+    height: auto;
+    flex-grow: 0.2; 
+}
+.caixa0{
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+justify-content: space-evenly;
+}
+@media (max-width: 1730px) {
+.imglad{
+    display: none;
+}
+}
