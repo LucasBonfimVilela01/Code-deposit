@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function Verificar() {
+            let x = parseFloat(document.getElementById("x").value);
+            if (x == 0) {
+                document.getElementById("v/f").innerHTML =
+                    "Falso";
+            }
+            else if (x == 1) {
+                document.getElementById("v/f").innerHTML =
+                    "Verdadeiro";
+            }
+            else {
+                document.getElementById("v/f").innerHTML =
+                    "Valor inválido";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="history.back()">Voltar</button>
+    <p id="v/f"></p>
+    <input id="x" type="number" />insira o valor<br>
+    <button onclick="Verificar();">Verificar</button>
+
+</body>
+
+</html>

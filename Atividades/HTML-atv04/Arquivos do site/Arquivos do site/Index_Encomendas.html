@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomendar Bolo</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Pães Doces e Bolos</h1>
+          
+             <ul> 
+             <li><a href="index.html">Página Principal</a></li>
+             <li> <a href="Index_Encomendas.html">Encomendar Bolo</a></li>
+             </ul>
+        
+            </header>
+
+    <main>
+
+        <h2>Encomendar Bolo</h2>
+
+        <p>Nome: <input type="text" name="Nome" size="35" maxlength="35" placeholder="Porfavor informe o nome">  
+        DDD: <input type="number" name="ddd" size="2" max="2" placeholder="DDD">
+        Telefone: <input type="number" name="ddd" size="10" maxlength="10" placeholder="DDD"></p>
+
+
+<Table border>
+
+    <caption>Bolos</caption>
+
+    <tr>
+        <td  rowspan="2"><img src="Imagens/Bolo01.png" alt="Bolo" title="Bolo" width="100%"></td>
+        <td  rowspan="2" ><img src="Imagens/Bolo02.png" alt="Bolo" title="Bolo" width="100%"></td>
+        <td  rowspan="2" ><img src="Imagens/Bolo03.png" alt="Bolo" title="Bolo" width="100%"></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+            <td>Frutas</td>
+            <td>Misto</td>
+        </tr>
+
+
+
+</Table>
+<form action="/action_page.php">
+<label for="Sabor"><p>Sabor <select name="" id="Sabor"><option value="Chocolate">Chocolate</option> <option value="Frutas">Frutas</option> <option value="Misto">Misto</option></select></label>
+    tipo: <label for="Simples"><input type="radio" id="Simples">Simples</label> <label for="Decoração"><input type="radio" name="" id="Decoração">Decoração</label>
+    </p>
+<label for="Tamanho"><p>Tamanho <input type="number" min="1" max="10">Kg</p></label>
+<label for="Diet?"><p>Diet?<input type="checkbox" name="" id="Diet?"></p></label>
+<p>Observações:</p>
+  <label for="Observações"><p><textarea  rows="3" cols="80" placeholder="Observações sobre o pedido"></textarea></p></label>
+<button type="submit" value="submit">Enviar pedido</button>
+<button type="reset" value="reset">Limpar</button>
+</form>
+</main>
+         
+</body>
+</html>

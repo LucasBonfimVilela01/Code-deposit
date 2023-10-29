@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function calcular() {
+            let n1 = parseInt(document.getElementById("n1").value);
+            let n2 = parseInt(document.getElementById("n2").value);
+            let n3 = parseInt(document.getElementById("n3").value);
+
+            let med = (n1+n2+n3)/3;
+            if(med >= 7){
+                document.getElementById("media").innerHTML =
+                "Você foi aprovado, com uma média de: " + med.toFixed(2); 
+            }
+            else{
+                document.getElementById("media").innerHTML =
+                "Você foi reprovado, com uma média de: " + med.toFixed(2);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="history.back()">Voltar</button>
+    <p id="media"></p>
+    <input id="n1" type="number" placeholder="insira a nota 1" /><br>
+    <input id="n2" type="number" placeholder="insira a nota 2" /><br>
+    <input id="n3" type="number" placeholder="insira a nota 3" /><br>
+
+    <button onclick="calcular();">Calcular</button>
+</body>
+
+</html>

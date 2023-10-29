@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function calcular() {
+            let h = parseInt(document.getElementById("h").value);
+            let l = parseInt(document.getElementById("l").value);
+            let a = h * l;
+            document.getElementById("resultadomulti").innerHTML =
+                "Área do retângulo: " + a.toFixed(2);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="history.back()">Voltar</button>
+    <p id="resultadomulti"></p>
+    <input id="h" type="number" placeholder="insira a altura" /><br>
+    <input id="l" type="number" placeholder="insira o comprimento" /><br>
+    <button onclick="calcular();">Calcular</button>
+</body>
+
+</html>

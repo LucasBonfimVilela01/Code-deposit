@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function calcula() {
+            let x = parseFloat(document.getElementById("x").value);
+            if (x > 0) {
+                document.getElementById("+/-").innerHTML =
+                    "o número é positivo";
+            }
+            else if (x < 0) {
+                document.getElementById("+/-").innerHTML =
+                    "O número é negativo";
+            }
+            else {
+                document.getElementById("+/-").innerHTML =
+                    "O número é zero";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="history.back()">Voltar</button>
+    <p id="+/-"></p>
+    <input id="x" type="number" />insira o valor<br>
+    <button onclick="calcula();">Verificar</button>
+
+</body>
+
+</html>

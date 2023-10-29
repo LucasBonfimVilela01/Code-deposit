@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function verificar() {
+            let dia = parseInt(document.getElementById("dia").value);
+            switch (dia) {
+                case 1:
+                    document.getElementById("semana").innerHTML =
+                        "Domingo";
+                    break;
+                case 2:
+                    document.getElementById("semana").innerHTML =
+                        "Segunda-Feira";
+                    break;
+                case 3:
+                    document.getElementById("semana").innerHTML =
+                        "Terça-Feira";
+                    break;
+                case 4:
+                    document.getElementById("semana").innerHTML =
+                        "Quarta-feira";
+                    break;
+                case 5:
+                    document.getElementById("semana").innerHTML =
+                        "Quinta-Feira";
+                    break;
+                case 6:
+                    document.getElementById("semana").innerHTML =
+                        "Sexta-Feira";
+                    break;
+                case 7:
+                    document.getElementById("semana").innerHTML =
+                        "Sábado";
+                    break;
+                default:
+                    document.getElementById("semana").innerHTML =
+                        "Valor inválido";
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="history.back()">Voltar</button>
+    <p id="semana"></p>
+    <input id="dia" type="number" placeholder="descubra o dia da semana" /><br>
+    <button onclick="verificar();">Verificar</button>
+
+</body>
+
+</html>

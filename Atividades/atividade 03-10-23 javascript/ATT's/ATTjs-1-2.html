@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+
+<head>
+    <script>
+        function Verificar() {
+            var num = prompt("Insira o número:");
+
+            num = parseInt(num);
+
+
+            if (num > 0) {
+                alert("O número é positivo: " + num);
+            }
+            else if (num < 0) {
+                alert("O número é negativo: " + num);
+            }
+            else {
+                alert("O número é zero: " + num);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="history.back()">Voltar</button>
+    <button onclick="Verificar()">Verificar número</button>
+
+</body>
+
+</html>

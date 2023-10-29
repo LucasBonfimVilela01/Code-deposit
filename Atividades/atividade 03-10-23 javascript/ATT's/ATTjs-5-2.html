@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+
+<head>
+    <script>
+        function Verificar() {
+            var n1 = prompt("insira a nota 1: ");
+            var n2 = prompt("insira a nota 2: ");
+            var n3 = prompt("insira a nota 3: ");
+            var med = (((parseFloat)(n1) + (parseFloat)(n2) + (parseFloat)(n3))/3);
+
+            if(med >= 7){
+                alert("Você foi aprovado, com uma média de: " + med.toFixed(2));
+            }
+            else{
+            alert("Você foi reprovado, com uma média de: " + med.toFixed(2));
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="history.back()">Voltar</button>
+    <button onclick="Verificar()">Verificar</button>
+
+</body>
+
+</html>
