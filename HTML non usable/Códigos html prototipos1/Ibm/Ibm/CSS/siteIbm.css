@@ -1,0 +1,30 @@
+div.opcoes{
+    padding-left: 11%;
+    }    
+img.filtro{
+    width: 125px;
+    height: 125px;
+    display: inline;
+}
+th.filtro{
+    width: 10%;
+}
+img.area{
+    width: 50%;
+    height: 40%;
+}
+div.amostra{
+
+    background-color: #DADADA;
+    
+}
+div.produto{
+    background-color: #EFEFEF;
+    
+}
+div.area2{
+    background-color: #ACC5E8; 
+}
+th.produto{
+    width: 10%;
+}

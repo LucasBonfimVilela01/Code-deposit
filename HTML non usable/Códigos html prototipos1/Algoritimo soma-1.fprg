@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-22 02:05:02 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtNRVRPRE9MT0dJQS0yMzsyMDIzLTAzLTA4OyIwMjo0NTo0NCAiOzMyNzA="/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtNRVRPRE9MT0dJQS0yMzsyMDIzLTAzLTA4OyIwMzowMjozNyAiOzc7MzM4MA=="/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtNRVRPRE9MT0dJQS0xNzsyMDIzLTAzLTIyOyIwMjowNTowMiAiOzM7MzM2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <assign variable="n1" expression="0"/>
+            <declare name="n2" type="Integer" array="False" size=""/>
+            <assign variable="n2" expression="0"/>
+            <declare name="n3" type="Integer" array="False" size=""/>
+            <assign variable="n3" expression="0"/>
+            <declare name="n4" type="Integer" array="False" size=""/>
+            <assign variable="n4" expression="0"/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="0"/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <assign variable="nome" expression="&quot; &quot;"/>
+            <output expression="&quot;Insira o nome e sobrenome do aluno&quot;" newline="True"/>
+            <input variable="Nome"/>
+            <output expression="&quot;Insira a nota do primeiro bimestre&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;insira a nota do segundo bimestre&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;insira a nota do terceiro bimestre&quot;" newline="True"/>
+            <input variable="n3"/>
+            <output expression="&quot;insira a nota do quarto bimestre&quot;" newline="True"/>
+            <input variable="n4"/>
+            <assign variable="media" expression="(n1+n2+n3+n4)/4"/>
+            <output expression="&quot;Nome:&quot; &amp;nome" newline="True"/>
+            <output expression="&quot;m&#233;dia:&quot; &amp;media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

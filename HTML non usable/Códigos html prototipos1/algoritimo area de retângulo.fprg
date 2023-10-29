@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-15 02:28:10 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtNRVRPRE9MT0dJQS0yMzsyMDIzLTAzLTA4OyIwMjo0NTo0NCAiOzMyNzA="/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtNRVRPRE9MT0dJQS0yMzsyMDIzLTAzLTE1OyIwMjoyODoxMCAiOzE2OzM0MjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Base" type="Real" array="False" size=""/>
+            <assign variable="Base" expression="0"/>
+            <declare name="Altura" type="Real" array="False" size=""/>
+            <assign variable="Altura" expression="0"/>
+            <declare name="multiplicacao" type="Real" array="False" size=""/>
+            <assign variable="multiplicacao" expression="0"/>
+            <output expression="&quot;Insira o valor da base do ret&#226;ngulo em metros&quot;" newline="True"/>
+            <input variable="Base"/>
+            <output expression="&quot;insira o valor da altura do ret&#226;ngulo em metros&quot;" newline="True"/>
+            <input variable="Altura"/>
+            <assign variable="multiplicacao" expression="Base*Altura"/>
+            <output expression="&quot;este &#233; a &#225;rea do ret&#226;ngulo: &quot; &amp;multiplicacao &amp;&quot;cm&#178;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

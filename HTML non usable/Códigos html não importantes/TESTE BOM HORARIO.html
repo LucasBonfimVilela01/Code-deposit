@@ -1,0 +1,17 @@
+<html>
+<head>
+    <style>div {text-align: center; font-family: 'Segoe UI';font-size: xx-large;}</style>
+</head>
+<body>
+    <div>
+        <h1>BOM DIA ou BOA NOITE?</h1>
+        <p id="textdia"></p>
+        <p id="textnoite"></p>
+    </div>
+    <script>
+        let hour = new Date().getHours();
+        if (hour < 19) {document.getElementById("textdia").innerHTML = "BOM DIA";}
+        else {document.getElementById("textnoite").innerHTML = "BOA NOITE";}
+    </script>
+</body>
+</html>
