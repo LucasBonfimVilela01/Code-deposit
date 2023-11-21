@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+    font-size: large;
+}
+
+/*Comando para tirar as setas de números dos navegadores.*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    appearance: textfield;
+}
+
+/* Definir plano de fundo, como um gradiente de rosa claro para azul claro*/
+body {
+    background-image: linear-gradient(to right, pink, lightblue);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Definir estilo da caixa onde o conteúdo do site está */
+.caixa1 {
+    width: fit-content;
+    min-width: 30%;
+    text-align: center;
+    padding: 30px;
+    padding: 10px;
+    border: none;
+    background-image: linear-gradient(to top, pink, lightblue);
+    border-radius: 15px;
+    margin: 5px;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Definir estilo dos elementos específicos da caixa1*/
+.caixa1 h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+@media (min-width:350px) {
+    .caixa1 h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+label {
+    display: block;
+    width: 150px;
+    margin: 5px 5px 5px 5px;
+}
+
+input {
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 0.6em;
+    background-color: white;
+    box-shadow: inset 5px 10px 15px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 0px 3px black;
+    transition: 200ms ease-in-out;
+}
+
+input:focus {
+    background-color: white;
+    transform: scale(1.03);
+    box-shadow: 10px 10px 100px #969696,
+        -13px -13px 100px #ffffff;
+    transition: 200ms ease-in-out;
+}
+
+/* Organização do display dos elemento da caixa2*/
+.caixa2 {
+    display: grid;
+    place-items: center;
+}
+
+/* Definir estilo da caixa de botõoes (caixa3) e seus botões*/
+.caixa3 {
+    padding: 10px;
+    border: none;
+    background-color: gainsboro;
+
+    border-radius: 15px;
+    margin: 5px;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.caixa3 button {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(225, 232, 235);
+    border-radius: 20px;
+    border: none;
+    transition: all 0.5 ease 0s;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+    margin: 5px;
+}
+
+.caixa3 button:hover {
+    background-color: lightblue;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.caixa3 button:active {
+    transform: translatey(-1px);
+    transition: 100ms ease-in-out;
+}
